@@ -1,0 +1,45 @@
+#
+# Kbuild ignores
+#
+.*
+*.o
+*.o.*
+*.a
+*.s
+Kbuild
+Config.in
+
+#
+# Never ignore these
+#
+!.gitignore
+
+#
+# Normal output
+#
+/busybox
+/busybox_old
+/busybox_unstripped*
+
+#
+# Backups / patches
+#
+*~
+*.orig
+*.rej
+/*.patch
+
+#
+# debugging stuff
+#
+core
+.gdb_history
+.gdbinit
+
+# 编译busybox生成的文件
+
+docs/BusyBox.1
+docs/BusyBox.html
+docs/BusyBox.txt
+docs/busybox.net/BusyBox.html
+docs/busybox.pod
